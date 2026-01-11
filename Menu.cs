@@ -5,7 +5,7 @@ public class Menu
 
     public static void Iniciando()
     {
-        Console.WriteLine("Seja bem-vindo! Poderia me informar seu nome?");
+        Console.Write("Digite seu nome: ");
         string? nomeUsuario = Console.ReadLine();
 
 
@@ -22,7 +22,7 @@ public class Menu
 
         Console.WriteLine();
 
-        Console.WriteLine("Deseja acessar o menu? (s/n)");
+        Console.Write("Deseja acessar o menu? (s/n): ");
         string? escolha = Console.ReadLine();
 
         if (escolha?.Trim().Equals("s", StringComparison.OrdinalIgnoreCase) == true)
@@ -36,7 +36,11 @@ public class Menu
 
         Console.WriteLine("=========== Menu ===========");
         Console.WriteLine("1 - Executar o programa");
+        Console.WriteLine("2 - Executatr exemplo Abstract");
+        Console.WriteLine("3 - Executar exemplo Interfaces");
         Console.WriteLine("0 - Fechar o programa");
+
+        Console.WriteLine();
 
         string? entrada = Console.ReadLine();
         if (!int.TryParse(entrada, out int opcao))
@@ -51,6 +55,14 @@ public class Menu
                 Console.WriteLine("Você escolheu a opção 1.");
                 break;
 
+            case 2:
+                Abstract.Executar();
+                break;
+            
+            case 3:
+                Interface.Executar();
+                break;
+
             case 0:
                 return;
 
@@ -60,4 +72,5 @@ public class Menu
 
         }
     }
+
 }

@@ -8,30 +8,26 @@ public class Comida(double peso)
     public double Peso { get; private set; } = peso;
 }
 
-public class Carne : Comida
+public class Carne(double peso) : Comida(peso)
 {
-    public Carne(double peso) : base(peso) { }
 }
 
-public class Arroz : Comida
+public class Arroz(double peso): Comida(peso)
 {
-    public Arroz(double peso) : base(peso) { }
+   
 }
 
-public class Feijao : Comida
+public class Feijao(double peso) : Comida(peso)
 {
-    public Feijao(double peso) : base(peso) { }
+    
 }
 
-public class Pessoa
+public class Pessoa(double pesoInicial = 0)
 {
     // Uso de propriedade com encapsulamento
-    public double Peso { get; private set; }
+    public double Peso { get; private set; } = pesoInicial;
 
-    public Pessoa(double pesoInicial = 0)
-    {
-        Peso = pesoInicial;
-    }
+    
 
     // Método polimórfico: aceita qualquer Comida
     public void Comer(Comida comida)
