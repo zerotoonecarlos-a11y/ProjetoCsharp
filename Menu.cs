@@ -15,7 +15,7 @@ public class Menu
         }
         else
         {
-            Console.WriteLine($"Como vai, {nomeUsuario}? É sempre um prazer encontrar você por aqui.");
+            Console.WriteLine($"Olá, {nomeUsuario}! Seja bem-vindo(a) de volta.");
         }
 
 
@@ -38,6 +38,8 @@ public class Menu
         Console.WriteLine("1 - Executar o programa");
         Console.WriteLine("2 - Executatr exemplo Abstract");
         Console.WriteLine("3 - Executar exemplo Interfaces");
+        Console.WriteLine("4 - Executar exemplo lambda");
+        Console.WriteLine("5 - Executar exemplo Delegate");
         Console.WriteLine("0 - Fechar o programa");
 
         Console.WriteLine();
@@ -61,6 +63,14 @@ public class Menu
             
             case 3:
                 Interface.Executar();
+                break;
+
+            case 4:
+                ExemploLambda.Executar();
+                break;
+
+            case 5: 
+                LambdasDelegate.Executar();
                 break;
 
             case 0:
