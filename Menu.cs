@@ -40,6 +40,7 @@ public class Menu
         Console.WriteLine("3 - Executar exemplo Interfaces");
         Console.WriteLine("4 - Executar exemplo lambda");
         Console.WriteLine("5 - Executar exemplo Delegate");
+        Console.WriteLine("6 - executar exeplo usando Delegates");
         Console.WriteLine("0 - Fechar o programa");
 
         Console.WriteLine();
@@ -60,7 +61,7 @@ public class Menu
             case 2:
                 Abstract.Executar();
                 break;
-            
+
             case 3:
                 Interface.Executar();
                 break;
@@ -69,8 +70,12 @@ public class Menu
                 ExemploLambda.Executar();
                 break;
 
-            case 5: 
+            case 5:
                 LambdasDelegate.Executar();
+                break;
+
+            case 6:
+                UsandoDelegate.Executar();
                 break;
 
             case 0:
