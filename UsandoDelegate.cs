@@ -37,5 +37,12 @@ public class UsandoDelegate
         ImprimirSoma op2 = MeuImprimirSoma;
 
         op2(2.3, 6);
+
+        Func<double, double, double> op3 = MinhaSoma;
+        Console.WriteLine(op3(3.6, 8.9));
+
+        Action<double, double> op4 = MeuImprimirSoma;
+
+        op4(5, 8.10);
     }
 }
