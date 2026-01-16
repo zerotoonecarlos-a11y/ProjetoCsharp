@@ -24,5 +24,9 @@ public static class MetodosDeExtensao
         int numero = 5;
 
         Console.WriteLine(numero.Soma(3));
+        Console.WriteLine(numero.Subtracao(5));
+
+        Console.WriteLine(2.Soma(10));
+        Console.WriteLine(4.Subtracao(6));
     }
 }

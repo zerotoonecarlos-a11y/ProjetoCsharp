@@ -1,11 +1,13 @@
 ﻿using encapsulamento;
-using encapsulamento.MetodosEFuncoes;
+// using encapsulamento.MetodosEFuncoes;
 
 // Menu.Iniciando();
 
-DelegateFuncAnonima.Executar();
+// DelegateFuncAnonima.Executar();
 
+// PrimeiraExecocao.Executar();
 
+// ExecoesPersonalizadas.Executar();
 
 
 // var arroz = new Arroz(0.4);
