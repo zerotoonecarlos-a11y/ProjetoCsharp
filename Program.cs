@@ -1,8 +1,11 @@
 ﻿using encapsulamento;
+using encapsulamento.MetodosEFuncoes;
 
 // Menu.Iniciando();
 
 DelegateFuncAnonima.Executar();
+
+
 
 
 // var arroz = new Arroz(0.4);
