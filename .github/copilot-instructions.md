@@ -1,61 +1,72 @@
-# Sobre o Projeto: Coleção de Exemplos em C#
+# Copilot Instructions for Encapsulamento Project
 
-Este projeto é uma aplicação de console em .NET 10, criada como um repositório de exemplos práticos para demonstrar diversos conceitos fundamentais e avançados da linguagem C#.
+## Project Overview
+Educational C# console application demonstrating core OOP concepts and advanced language features. Single-namespace project (`encapsulamento`) with .NET 10.0 target framework. Each module isolates specific concepts for learning.
 
-## Objetivo
+## Architecture & Module Organization
 
-O propósito principal é servir como uma ferramenta educacional e de consulta rápida para desenvolvedores C#. Ele é estruturado para que cada conceito seja isolado em seu próprio arquivo, facilitando o estudo e a compreensão.
+**Four dedicated concept areas:**
+- **`POO/`** - OOP fundamentals: Abstract classes (Abstract.cs), interfaces (Interface.cs), polymorphism (Polimorfismo.cs), sealed classes (Sealed.cs)
+- **`MetodosEFuncoes/`** - Delegates, lambdas, anonymous methods, extension methods
+- **`Excecoes/`** - Exception handling with custom exceptions (ExcecoesPersonalizadas.cs)
+- **`Api/`** - Utility extensions; `PrimeiroArquivo.cs` demonstrates file I/O and extension methods
 
-## Estrutura de Diretórios
+**Entry point:** Program.cs activates specific examples; Menu.cs provides interactive navigation.
 
-O código-fonte está organizado nos seguintes diretórios, cada um focado em uma área específica da linguagem:
+## Key Patterns & Conventions
 
--   **/POO/**: Contém exemplos relacionados aos pilares da Programação Orientada a Objetos.
-    -   `Abstract.cs`: Demonstra o uso de classes e métodos abstratos.
-    -   `Interface.cs`: Exemplo de implementação de interfaces.
-    -   `Polimorfismo.cs`: Exemplo prático de polimorfismo.
-    -   `Sealed.cs`: Demonstra o conceito de classes seladas (atualmente vazio).
+### Extension Methods
+Defined as `public static` methods on static classes (e.g., `ExtensaoString.ParseHome()`). Used for cross-platform string utilities like path parsing.
 
--   **/MetodosEFuncoes/**: Focado em funções, delegados e expressões lambda.
-    -   `DelegateComoParametro.cs`
-    -   `DelegateFuncAnonima.cs`
-    -   `ExemploLambda.cs`
-    -   `LambdasDelegate.cs`
-    -   `MetodosDeExtensao.cs`: Demonstra como criar e usar métodos de extensão.
-    -   `UsandoDelegate.cs`
-
--   **/Excecoes/**: Contém exemplos de tratamento de exceções.
-    -   `ExcecoesPersonalizadas.cs`: Como criar classes de exceção customizadas.
-    -   `PrimeiraExcecao.cs`
-
--   **/Api/**: Atualmente, contém um exemplo simples de manipulação de arquivos.
-    -   `PrimeiroArquivo.cs`: Demonstra operações básicas de leitura e escrita de arquivos.
-
-## Como Executar o Projeto
-
-A arquitetura principal foi projetada para ser controlada por um menu interativo.
-
-### Executando o Menu Principal (Uso Pretendido)
-
-A classe `Menu.cs` contém a lógica para exibir um menu no console, permitindo que o usuário escolha qual exemplo de código deseja executar. Para usar o projeto da forma como foi idealizado:
-
-1.  Abra o arquivo `Program.cs`.
-2.  Comente ou remova a linha `PrimeiroArquivo.Executar();`.
-3.  Descomente ou adicione a linha `Menu.Iniciando();`.
-
-Após essa alteração, ao executar o projeto (`dotnet run`), o menu principal será exibido.
-
-### Execução Atual
-
-No estado atual, o ponto de entrada (`Program.cs`) está configurado para executar diretamente o exemplo de manipulação de arquivos:
-
+### Primary Constructor Pattern
+Classes use C# 12 primary constructors:
 ```csharp
-// Program.cs
-PrimeiroArquivo.Executar();
+public class Comida(double peso) { public double Peso { get; private set; } = peso; }
+```
+Base class inheritance: `public class Carne(double peso) : Comida(peso) {}`
+
+### Property Encapsulation
+Strict access control via `{ get; private set; }` or `{ private set; }` to enforce data integrity. Example: `Pessoa.Peso` prevents external modification.
+
+### Polymorphism Through Base Classes
+Subclasses override base methods for behavior variation (e.g., `Celular` abstract class with `Iphone` and `Motorola` implementations).
+
+### Delegate Usage Patterns
+- **Simple delegate:** `delegate double Soma(double a, double b);`
+- **Delegates as parameters:** Pass methods matching delegate signatures
+- **Anonymous methods & lambdas:** Prefer lambdas (`Func<>`, `Action`) for concise syntax
+
+### Exception Handling
+Try-catch-finally pattern shown in `PrimeiraExcepcao.cs`. Custom exceptions inherit from base exception types.
+
+## Build & Run Workflow
+
+```bash
+dotnet build encapsulamento.csproj    # Compile; outputs to bin/Debug/net10.0/
+dotnet run                             # Execute with Program.cs entry point
 ```
 
-Isso significa que, ao rodar o projeto, apenas a funcionalidade de leitura e escrita de arquivos da classe `PrimeiroArquivo` será executada.
+**Note:** Program.cs has most examples commented out. Uncomment specific module calls (e.g., `Menu.Iniciando()`, `Abstract.Executar()`) to run examples.
 
-### Testando Outros Exemplos
+## Cross-File Communication & Naming
 
-Alguns exemplos, como os de polimorfismo e métodos de extensão, foram testados diretamente no `Program.cs` (como pode ser visto no código comentado). Para testá-los individualmente, você pode seguir o mesmo padrão: chamar o método de execução correspondente diretamente do método `Main`.
+- **Single namespace:** All public types use `namespace encapsulamento;` at file top
+- **Static Executar() methods:** Standard pattern for module execution: `ClassName.Executar()`
+- **Console-driven interaction:** All examples write directly to console; no external dependencies
+
+## Important Files & Patterns by Task
+
+| Task | File | Pattern |
+|------|------|---------|
+| Add OOP example | `POO/NewConcept.cs` | Implement abstract/interface members; add `Executar()` method |
+| Add functional example | `MetodosEFuncoes/NewFeature.cs` | Define delegates/lambdas; use `Func<>` and `Action` types |
+| Add utility | `Api/Utilities.cs` | Use static extension class; mark methods `public static` |
+| Test locally | Program.cs | Uncomment target class call; run `dotnet run` |
+| Add to menu | Menu.cs | Add case in switch statement; call `ClassName.Executar()` |
+
+## Development Notes
+
+- **Namespace management:** All files already declare `namespace encapsulamento;` at top—maintain this consistently
+- **File I/O cross-platform:** Use `Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)` and `Path.Combine()` for OS-agnostic paths
+- **No external NuGet dependencies** visible; project self-contained for educational purposes
+- **Nullable reference types:** Project uses nullable annotations; use `string?` and null-coalescing operators appropriately
