@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlos/Documentos/projetosCsharp/encapsulamento/encapsulamento.csproj",
-      "projectName": "encapsulamento",
-      "projectPath": "/home/carlos/Documentos/projetosCsharp/encapsulamento/encapsulamento.csproj",
+      "projectUniqueName": "/home/carlos/Documentos/projetosCsharp/Fundamentos/FundamentosCSharp.csproj",
+      "projectName": "FundamentosCSharp",
+      "projectPath": "/home/carlos/Documentos/projetosCsharp/Fundamentos/FundamentosCSharp.csproj",
       "packagesPath": "/home/carlos/.nuget/packages/",
-      "outputPath": "/home/carlos/Documentos/projetosCsharp/encapsulamento/obj/",
+      "outputPath": "/home/carlos/Documentos/projetosCsharp/Fundamentos/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/carlos/.nuget/NuGet/NuGet.Config"

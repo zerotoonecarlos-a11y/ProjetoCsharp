@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 public class ExemploDirectoryInfo
 {

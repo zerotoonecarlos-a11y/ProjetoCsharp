@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 public static class ExtensaoString
 {

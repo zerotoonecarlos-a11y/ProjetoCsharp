@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace encapsulamento.MetodosEFuncoes;
+namespace FundamentosCSharp;
 
 public static class ExtensaoInteiro
 {

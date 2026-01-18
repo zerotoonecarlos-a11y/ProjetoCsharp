@@ -1,37 +1,3 @@
-﻿using encapsulamento;
+using FundamentosCSharp;
 
 ExemploFileInfo.Executar();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

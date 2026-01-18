@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 public class PrimeiraExecocao
 {

@@ -2,7 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 public abstract class Celular
 {

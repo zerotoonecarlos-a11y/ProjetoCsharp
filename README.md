@@ -24,6 +24,20 @@ O projeto ilustra os seguintes conceitos:
 - **Delegates:** Uso de delegates para referenciar métodos, incluindo passagem de delegates como parâmetros.
 - **Métodos Anônimos:** Uso de `delegate` para criar métodos anônimos.
 - **Expressões Lambda:** Demonstração da sintaxe concisa de expressões lambda em substituição a métodos anônimos.
+- **Métodos de Extensão:** O arquivo `MetodosDeExtensao.cs` mostra como adicionar novos métodos a tipos existentes sem modificar o código-fonte original.
+
+### Manipulação de Arquivos (API de I/O)
+
+- **Criação e Escrita de Arquivos:** O arquivo `PrimeiroArquivo.cs` usa `StreamWriter` para criar e escrever em arquivos de texto.
+- **Leitura de Arquivos:** `LendoArquivo.cs` demonstra como ler o conteúdo de arquivos.
+- **Uso da classe `Path`:** `ExemploPath.cs` mostra como extrair informações de caminhos de arquivos (diretório, nome do arquivo, extensão).
+- **Uso de `FileInfo` e `DirectoryInfo`:** Os arquivos `ExemploFileInfo.cs` e `ExemploDirectoryInfo.cs` ilustram a manipulação de informações de arquivos e diretórios de forma orientada a objetos.
+- **Listagem de Diretórios:** `Diretorios.cs` mostra como listar os diretórios.
+
+### Tratamento de Exceções
+
+- **Exceções Comuns:** `PrimeiraExcecao.cs` demonstra o bloco `try-catch-finally` para capturar exceções, como `FileNotFoundException`.
+- **Exceções Personalizadas:** `ExcecoesPersonalizadas.cs` ensina como criar suas próprias classes de exceção herdando de `Exception`.
 
 ## Estrutura do Projeto
 

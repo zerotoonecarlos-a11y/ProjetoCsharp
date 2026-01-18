@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 
 public class NegativeException : Exception

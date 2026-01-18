@@ -1,4 +1,4 @@
-﻿namespace encapsulamento;
+﻿namespace FundamentosCSharp;
 
 public class ExemploPath
 {

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace encapsulamento;
+namespace FundamentosCSharp;
 
 public class DelegateComoParametro
 {
