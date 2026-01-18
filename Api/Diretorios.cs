@@ -16,14 +16,19 @@ public class Diretorios
         Console.WriteLine(Directory.GetCreationTime(novoDir));
 
 
-        Console.WriteLine("===Pastas===========");
+        Console.WriteLine("=== Pastas ===========");
         var pastas = Directory.GetDirectories(dirProjeto);
 
         foreach(var pasta in pastas) Console.WriteLine(pasta);
         
-
+        Console.WriteLine("\n\n== Arquivos =========");
         var arquivos = Directory.GetFiles(dirProjeto);
 
         foreach(var arquivo in arquivos) Console.Write(arquivo);
+
+        Console.WriteLine("\n\n== Raiz ============== ");
+        Console.WriteLine(Directory.GetDirectoryRoot(novoDir));
+
+        Directory.Move(novoDir, novoDirDestino);
     }
 }
