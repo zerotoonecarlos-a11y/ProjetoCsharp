@@ -1,3 +1,3 @@
 using FundamentosCSharp;
 
-ExemploFileInfo.Executar();
+LINQ1.Executar();
