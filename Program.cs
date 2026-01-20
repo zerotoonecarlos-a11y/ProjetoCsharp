@@ -1,3 +1,3 @@
 using FundamentosCSharp;
 
-LINQ1.Executar();
+LINQ2.Executar();
