@@ -13,3 +13,11 @@
 /home/carlos/Documentos/projetosCsharp/Fundamentos/obj/Debug/net10.0/FundamentosCSharp.pdb
 /home/carlos/Documentos/projetosCsharp/Fundamentos/obj/Debug/net10.0/FundamentosCSharp.genruntimeconfig.cache
 /home/carlos/Documentos/projetosCsharp/Fundamentos/obj/Debug/net10.0/ref/FundamentosCSharp.dll
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.AssemblyInfoInputs.cache
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.AssemblyInfo.cs
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.csproj.CoreCompileInputs.cache
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.sourcelink.json
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.dll
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/refint/FundamentosCSharp.dll
+/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/Debug/net10.0/FundamentosCSharp.pdb

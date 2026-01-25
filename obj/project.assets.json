@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlos/Documentos/projetosCsharp/Fundamentos/FundamentosCSharp.csproj",
+      "projectUniqueName": "/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/FundamentosCSharp.csproj",
       "projectName": "FundamentosCSharp",
-      "projectPath": "/home/carlos/Documentos/projetosCsharp/Fundamentos/FundamentosCSharp.csproj",
+      "projectPath": "/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/FundamentosCSharp.csproj",
       "packagesPath": "/home/carlos/.nuget/packages/",
-      "outputPath": "/home/carlos/Documentos/projetosCsharp/Fundamentos/obj/",
+      "outputPath": "/home/carlos/Documentos/projetoCSharp/ProjetoCsharp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/carlos/.nuget/NuGet/NuGet.Config"
@@ -26,7 +26,7 @@
         "net10.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

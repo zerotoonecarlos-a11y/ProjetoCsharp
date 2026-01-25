@@ -2,7 +2,7 @@
 
 public class Generico
 {
-    public class Caixa<T> 
+    public class Caixa<T>
     {
         T valorPrivado;
 
@@ -19,8 +19,19 @@ public class Generico
         }
     }
 
+    public class CaixaInt : Caixa<int>
+    {
+        public CaixaInt() : base(0) { }
+    }
+
     public static void Executar()
     {
+        var caixaExem = new Caixa<int>(1000);
+        Console.WriteLine(caixaExem.MetodoGenerico(33));
+        Console.WriteLine(caixaExem.Coisa.GetType());
 
+        var caixaExem2 = new Caixa<string>("Construtor");
+        Console.WriteLine(caixaExem2.MetodoGenerico("Teste"));
+        Console.WriteLine(caixaExem2.Coisa.GetType());
     }
 }
